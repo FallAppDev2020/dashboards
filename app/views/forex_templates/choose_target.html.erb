@@ -3,11 +3,12 @@
 Go <a href="/forex">back</a>.
 
 <ul>
-    <%@array_of_symbols.each do |a_symbol|%>
+    <%@symkeys.each do |a_symbol|%>    
     <li>
-      <a href="/forex/AED/AED">
-        Convert 1 AED to AED...
+      <a href="/forex/<%=@src%>/<%=a_symbol%>">
+        Convert 1 <%=@src%> to <%=a_symbol%>...
       </a>
     </li>
     <% end %>
 </ul>
+
